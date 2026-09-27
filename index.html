@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thompson — Portfolio</title>
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --border:#30363d; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  header { border-bottom:1px solid var(--border); padding:2rem 1.5rem; text-align:center; }
+  header h1 { font-size:2rem; letter-spacing:-0.02em; }
+  header p { color:var(--muted); margin-top:0.5rem; }
+  main { max-width:900px; margin:0 auto; padding:2rem 1.5rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.25rem; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:1.5rem; transition:border-color .2s; }
+  .card:hover { border-color:var(--accent); }
+  .card h2 { font-size:1.15rem; margin-bottom:0.4rem; }
+  .card .stack { color:var(--accent); font-size:0.85rem; margin-bottom:0.75rem; }
+  .card p { color:var(--muted); font-size:0.95rem; margin-bottom:1rem; }
+  .card a { color:var(--accent); text-decoration:none; font-weight:600; font-size:0.9rem; }
+  .card a:hover { text-decoration:underline; }
+  .section-title { margin:2.5rem 0 1rem; font-size:1.3rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem; }
+  .next-steps { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:1.5rem; }
+  .next-steps ol { margin-left:1.25rem; color:var(--muted); }
+  .next-steps li { margin-bottom:0.5rem; }
+  footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:2rem 1rem; border-top:1px solid var(--border); }
+  footer a { color:var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Thompson</h1>
+  <p>Home automation engineer &middot; Android, embedded, cloud</p>
+</header>
+<main>
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h2>GhettoSystems</h2>
+      <div class="stack">Kotlin &middot; Android &middot; v2.4.9</div>
+      <p>Home lab device control app — garage doors, power, device registry, biometric login, MCP server management, and an in-app assistant.</p>
+      <a href="https://github.com/thompsonhome2013-alt/GhettoSystems">View repo &rarr;</a>
+    </div>
+    <div class="card">
+      <h2>GhettoSystems Ubuntu Cloud</h2>
+      <div class="stack">PHP &middot; MQTT &middot; LLM &middot; systemd</div>
+      <p>Cloud backend: REST API v2, MQTT daemon, LLM agent with RAG and tool use, YouTube download service, and manufacturing admin tools.</p>
+      <a href="https://github.com/thompsonhome2013-alt/GhettoSystems-ubuntu-cloud">View repo &rarr;</a>
+    </div>
+    <div class="card">
+      <h2>GhettoSystems UNO Q</h2>
+      <div class="stack">C++ &middot; Arduino &middot; Python &middot; Hardware</div>
+      <p>GaragePLC firmware for the Arduino UNO Q — pressure sensing, compressor control, solenoid dump logic, WS2812 status, plus a protohat schematic and BOM.</p>
+      <a href="https://github.com/thompsonhome2013-alt/GhettoSystems-UNO-Q">View repo &rarr;</a>
+    </div>
+    <div class="card">
+      <h2>GhettoYT</h2>
+      <div class="stack">Kotlin &middot; Android &middot; v3.0.4</div>
+      <p>YouTube downloader client that pushes videos into TrueNAS Jellyfin libraries — job queue, file browser, rename, and keyboard-aware UI.</p>
+      <a href="https://github.com/thompsonhome2013-alt/GhettoYT">View repo &rarr;</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">What I do</h2>
+  <p style="color:var(--muted); margin-bottom:1rem;">I design and build full-stack systems end to end: Android clients, embedded firmware, cloud APIs, and the hardware that ties it together. I use AI coding agents (Grok) as a build tool — I set direction, review output, and own the architecture.</p>
+
+  <h2 class="section-title">Next steps</h2>
+  <div class="next-steps">
+    <ol>
+      <li>Add screenshots and a short demo video to each project card.</li>
+      <li>Write a short case study per project: problem, approach, result.</li>
+      <li>Link this page from LinkedIn (headline + About) and set the GitHub profile to match.</li>
+      <li>Ship one small public improvement to any repo to show active development.</li>
+    </ol>
+  </div>
+</main>
+<footer>
+  <a href="https://thompsonized.org">thompsonized.org</a> &middot; <a href="https://github.com/thompsonhome2013-alt">github.com/thompsonhome2013-alt</a>
+</footer>
+</body>
+</html>
